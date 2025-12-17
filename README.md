@@ -1,6 +1,6 @@
 # quickstart-deploy-aspnet-core-app-service
 
-Quickstart-deploy-aspnet-core-app-service is a demo project showcasing what you can get your application up on Azure using [Azure Developer CLI](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/overview)(azd).
+Quickstart-deploy-aspnet-core-app-service is a demo project showcasing what you can get your application up on Azure using [Azure Developer CLI](https://learn.microsoft.com/azure/developer/azure-developer-cli/overview)(azd).
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ The following prerequisites are required to use this application.  Please ensure
     curl -fsSL https://aka.ms/install-azd.sh | bash 
     ```
 
-- [.Net SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- [.Net SDK 10.0](https://dotnet.microsoft.com/download/dotnet/10.0)
 
 - [Git (2.36.1+)](https://git-scm.com/)
 

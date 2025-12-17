@@ -42,7 +42,7 @@ var resourceToken = toLower(uniqueString(subscription().id, environmentName, loc
 //   tags: union(tags, { 'azd-service-name': apiServiceName })
 
 // Organize resources in a resource group
-resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
+resource rg 'Microsoft.Resources/resourceGroups@2025-04-01' = {
   name: !empty(resourceGroupName) ? resourceGroupName : '${abbrs.resourcesResourceGroups}${environmentName}'
   location: location
   tags: tags
@@ -59,7 +59,7 @@ module web './core/host/appservice.bicep' = {
     location: location
     appServicePlanId: appServicePlan.outputs.id
     runtimeName: 'dotnetcore'
-    runtimeVersion: '8.0'
+    runtimeVersion: '10.0'
     tags: union(tags, { 'azd-service-name': 'web' })
   }
 }

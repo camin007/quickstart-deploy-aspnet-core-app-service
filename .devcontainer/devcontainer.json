@@ -1,6 +1,6 @@
 {
     "name": "Azure Developer CLI",
-    "image": "mcr.microsoft.com/devcontainers/dotnet:8.0-bookworm",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:10.0-noble",
     "features": {
         // See https://containers.dev/features for list of features
         

@@ -37,7 +37,7 @@ param use32BitWorkerProcess bool = false
 param ftpsState string = 'FtpsOnly'
 param healthCheckPath string = ''
 
-resource appService 'Microsoft.Web/sites@2022-03-01' = {
+resource appService 'Microsoft.Web/sites@2025-03-01' = {
   name: name
   location: location
   tags: tags
@@ -98,7 +98,7 @@ module configAppSettings 'appservice-appsettings.bicep' = {
 }
 
 // sites/web/config 'logs'
-resource configLogs 'Microsoft.Web/sites/config@2022-03-01' = {
+resource configLogs 'Microsoft.Web/sites/config@2025-03-01' = {
   name: 'logs'
   parent: appService
   properties: {
@@ -110,7 +110,7 @@ resource configLogs 'Microsoft.Web/sites/config@2022-03-01' = {
   dependsOn: [configAppSettings]
 }
 
-resource keyVault 'Microsoft.KeyVault/vaults@2022-07-01' existing = if (!(empty(keyVaultName))) {
+resource keyVault 'Microsoft.KeyVault/vaults@2025-05-01' existing = if (!(empty(keyVaultName))) {
   name: keyVaultName
 }
 
